@@ -1,0 +1,27 @@
+class  Color{
+  String color="Red";
+}
+class Triangle extends Color{
+   public void Tcolor(){
+    System.out.println("This is from Traingle class" + this.color);
+   }
+}
+class Squares extends Color{
+public void Scolor(){
+    System.out.println("This is from Square class" + this.color);
+   }
+}
+public class HierarchicalInheritance {
+    public static void main(String args[]){
+        Triangle t1=new Triangle();
+        Squares sq2=new Squares();
+         t1.color="Red";
+         sq2.color="Black";
+         t1.Tcolor();
+         sq2.Scolor();
+         //the Color class is being extended by both the clasess that is Traingle and Sqaures
+         
+       
+    }
+    
+}
