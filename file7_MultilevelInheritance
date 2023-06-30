@@ -1,0 +1,22 @@
+class Shape{
+ String color;
+}
+class Square extends Shape{
+  int Side;
+}
+class Squar2  extends Square{
+int perimeter;
+}
+public class MultilevelInheritance {
+    public static void main(String args[]){
+        Squar2 sq=new Squar2();
+        sq.color="red";
+        sq.Side=4;
+        sq.perimeter=16;
+        // Square class is child of Shape class and Sqaure2 class is child of 
+        // Square , and the Sqaure2 is able to use the properties of Shape class 
+        // so this is called multilevel inheritance 
+
+    }
+    
+}
